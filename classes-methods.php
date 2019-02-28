@@ -1,16 +1,19 @@
 <?php
+
 class User{
-  public function login($username, $password){
-    $this->auth_user($username, $password);
+  public function login(){
+    $this->auth_user();
   }
-  public function auth_user($username, $password){
-    echo $username.' is authenticated';
+  public function auth_user(){
+    echo 'This is the auth_user() method, being called inside another method named login() method';
   }
 }
 
 $User = new User;
 
-$User->login('Henry',123);
+echo $User->login();
+
+
 
 /*
   CLASSES & METHODS
@@ -59,7 +62,7 @@ METHODS WITH PARAMS
 
   $User = new User;
 
-  $User->login('Henry',123);
+  echo $User->login('Henry',123);
   
 
 
@@ -99,23 +102,7 @@ CALL A METHOD INSIDE ANOTHER METHOD
 
   $User = new User;
 
-  $User->login();
-
-
-
-  CALL A METHOD INSIDE ANOTHER METHOD WITH PARAMS
-  class User{
-    public function login($username, $password){
-      $this->auth_user($username, $password);
-    }
-    public function auth_user($username, $password){
-      echo $username.' is authenticated';
-    }
-  }
-
-  $User = new User;
-
-  $User->login('Henry',123);
+  echo $User->login();
 
 
   

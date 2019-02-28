@@ -1,21 +1,4 @@
 <?php
-<<<<<<< HEAD
-// Include Config
-require('config.php');
-
-require('classes/Bootstrap.php');
-require('classes/Controller.php');
-
-require('controllers/home.php');
-require('controllers/shares.php');
-require('controllers/users.php');
-
-$bootstrap = new Bootstrap($_GET);
-$controller = $bootstrap->createController();
-if($controller){
-  $controller->executeAction();
-}
-=======
 class User{
   // public $id = 33;
   private $id;
@@ -79,4 +62,3 @@ $User = new User('Henry','wordpass');
 -can have params in constructor
 
 */
->>>>>>> parent of 2b3aa80... oop fundamentals done
