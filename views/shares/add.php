@@ -1,4 +1,3 @@
-
 <div class="card">
   <div class="card-header">
     <h3 class="card-title">Share Something</h3>
