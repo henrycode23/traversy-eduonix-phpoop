@@ -7,6 +7,7 @@
   <title>Shareboard</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -41,11 +42,7 @@
 
   <!-- Page Content -->
   <div class="container mt-5">
-    <div class="row">
-      <div class="col-lg">
-        <?php require($view); ?>
-      </div>
-    </div>
+    <?php require($view); ?>
   </div>
 
       
