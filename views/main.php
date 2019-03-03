@@ -51,6 +51,7 @@
 
   <!-- Page Content -->
   <div class="container mt-5">
+    <?php Messages::display(); ?>
     <?php require($view); ?>
   </div>
 
